@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
+      }
+      .container {
+        background-color: rgb(255, 174, 0);
+        color: white;
+        text-align: center;
+        max-width: 600px;
+        padding: 65px;
+        border-radius: 10px;
+      }
+      .link {
+        text-align: left;
+      }
+      h1 {
+        border: 2px solid;
+        display: inline-block;
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+      img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        margin-bottom: 4px;
+        margin-top: 4px;
+      }
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+      button {
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        color: #fff;
+        font-size: 40px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Beauty of Automation</h1>
+      <h2>Using Terraform As Iac</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/628/original/1682254147620.png?1735416117"
+        width="300"
+      />
+      <hr />
+      <p>
+        TERRAFORM is an open-source Infrastructure as Code (IaC) tool developed
+        by HashiCorp. It allows users to define and provision infrastructure
+        resources such as servers, databases, and networks using declarative
+        configuration files. By utilizing a consistent and reproducible
+        approach, Terraform enables automated, scalable, and efficient
+        management of infrastructure across multiple cloud providers,
+        on-premises environments, and hybrid setups. Its key features include
+        state management, modularity, and support for multi-cloud
+        infrastructure.
+      </p>
+      <br />
+      <div class="link">
+        <a
+          href=" 
+https://www.linkedin.com/posts/temitayo-ali-awopetu_devops-infrastructureascode-terraform-activity-7274464760450949120-O6po?utm_source=share&utm_medium=member_android"
+          target="_blank"
+        >
+          Read on Linkedin</a
+        >
+      </div>
+      <br />
+      <button>Register on Terraform</button>
+    </div>
+    <script>
+      function registerOnTerraform() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thank you, " + name + "! we will get back to you at " + email + "."
+        );
+      }
+      let registerButton = document.querySelector("button");
+      registerButton.addEventListener("click", registerOnTerraform);
+    </script>
+  </body>
+</html>
